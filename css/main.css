@@ -1,0 +1,62 @@
+card, list, board{
+  display:block;
+  position:relative;
+}
+.card, list, board{
+  padding: 15px;
+  border:1px solid grey;
+  border-radius: 2px;
+}
+
+board{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+list{
+  width: 200px;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.card{
+  padding-right: 30px;
+  margin-bottom: 4px;
+  font-size: 1em;
+}
+
+.card textarea{
+  width: 100%;
+}
+
+.new-icon{
+  position: absolute;
+  top:2px;
+  right:2px;
+  font-size: 10px;
+}
+
+.move {
+  position: absolute;
+  top:calc(50% - 10px);
+  right:5px;
+}
+
+.move {
+  position: absolute;
+  top:calc(50% - 10px);
+  right:5px;
+}
+
+.move-up {
+  position: absolute;
+  top:calc(25% - 10px);
+  right:5px;
+}
+
+.move-down {
+  position: absolute;
+  top:calc(75% - 10px);
+  right:5px;
+}

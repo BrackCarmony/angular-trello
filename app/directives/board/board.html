@@ -1,0 +1,5 @@
+<div ng-repeat = "list in board.lists">
+  <list cards="list" change-list="changeList"></list>
+</div>
+
+<i class="new-icon fa fa-plus" aria-hidden="true" ng-click="board.lists.push([{}])"></i>

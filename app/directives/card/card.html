@@ -1,0 +1,13 @@
+<div class="card" ng-style="{background:card.color}">
+  <div ng-show="editing">
+  <textarea type="text" ng-model="card.text" name="" value=""> </textarea> <br/>
+  <input type="color" ng-model="card.color"/> <br/>
+  <button ng-click="editing = false">Done</button>
+  </div>
+  <div >
+    {{ card.text }}
+    <i class="fa fa-pencil" ng-click="editing = !editing" aria-hidden="true"></i>
+  </div>
+  <i ng-if="card.moveDown" class="move-up fa fa-arrow-up" ng-click="card.moveUp()" aria-hidden="true"></i>
+  <i ng-if="card.moveDown" class="move-down fa fa-arrow-down" ng-click="card.moveDown()" aria-hidden="true"></i>
+</div>

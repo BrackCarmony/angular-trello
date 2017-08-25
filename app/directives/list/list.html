@@ -1,0 +1,4 @@
+<div ng-repeat = "card in list.cards">
+  <card move-up="$index?list.swap($index, $index-1):false" move-down="$index<list.cards.length?list.swap($index, $index+1):false" text="card.text" color="card.color"></card>
+</div>
+<i class="new-icon fa fa-plus" aria-hidden="true" ng-click="list.cards.push({})"></i>
